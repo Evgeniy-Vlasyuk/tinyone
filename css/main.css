@@ -73,6 +73,8 @@ ul, li {
 .icons__item a {
 	font-size: 42px;
 	color: #010101;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
 
@@ -222,14 +224,19 @@ ul, li {
 		margin: 0 auto;
 	}
 	.icons {
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		margin-top: 40px;
 	}
 }
 
 @media (max-width: 576px) {
 	.menu {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		margin-top: 20px;
   }
   
